@@ -1,0 +1,37 @@
+
+Django install:
+===============
+	pip install --upgrade django
+
+Django-Bootstrap install:
+=========================
+	pip install --upgrade django-bootstrap3
+	pip install --upgrade django-bootstrap4
+
+Django-braces install:
+=====================
+	pip install --upgrade django-braces
+
+Django REST Framework:
+======================
+	1. pip install --upgrade djangorestframework
+	2. pip install --upgrade django-rest-framework
+
+Django Rest Auth:
+=================
+	1. pip install --upgrade django-rest-auth (# this is used for user login & logout)
+		=> After installed we have to write into INSTALLED_APPS[
+			'rest_auth',
+		   ] 
+	2. pip install --upgrade django-allauth (# this is used for user registration)
+
+Used to linking with text:
+==========================
+	1. pip install --upgrade misaka
+
+For POSTGRE SQL:
+===============
+	pip install --upgrade psycopg2
+
+
+

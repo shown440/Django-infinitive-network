@@ -1,0 +1,6 @@
+Key feaures:
+	1. Groups(Similar to subreddit)
+	2. Multiple Users and Authorization
+	3. Posts in groups(Similar to a tweet)
+	4. Linking user profiles with @ symbol
+	5. Multiple Applications
