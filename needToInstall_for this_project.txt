@@ -12,6 +12,10 @@ Django-braces install:
 =====================
 	pip install --upgrade django-braces
 
+Django-admin-sortable:
+======================
+	pip install django-admin-sortable
+
 Django REST Framework:
 ======================
 	1. pip install --upgrade djangorestframework

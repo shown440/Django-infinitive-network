@@ -9,6 +9,7 @@ from django.http import Http404
 from django.views import generic
 
 from braces.views import SelectRelatedMixin
+from django.contrib import messages
 
 from . import models
 from . import forms
@@ -50,7 +51,7 @@ class PostDetail(SelectRelatedMixin, generic.DetailView):
     # select_related = ('user', group)
 
     def get_queryset(self):
-        queryset = super.get_queryset()
+        queryset = super().get_queryset()
 
         return queryset.filter(user__username__iexact=self.kwargs.get('username'))
 
@@ -59,6 +60,8 @@ class CreatePost(LoginRequiredMixin, SelectRelatedMixin, generic.CreateView):
 
     fields = ('message', 'group')
     model = models.Post
+
+    # success_url = reverse_lazy('posts:all')
 
     def form_valid(self, form):
         self.object = form.save(commit=False)
